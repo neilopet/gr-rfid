@@ -23,7 +23,7 @@
 #endif
 
 #include <gnuradio/io_signature.h>
-#include "rfid/global_vars.h"
+#include <gnuradio/rfid/global_vars.h>
 
 #include <iostream>
 namespace gr {

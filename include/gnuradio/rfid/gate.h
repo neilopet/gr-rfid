@@ -21,7 +21,7 @@
 #ifndef INCLUDED_RFID_GATE_H
 #define INCLUDED_RFID_GATE_H
 
-#include <rfid/api.h>
+#include <gnuradio/rfid/api.h>
 #include <gnuradio/block.h>
 
 namespace gr {
@@ -38,7 +38,7 @@ namespace gr {
 		class RFID_API gate : virtual public gr::block
 		{
 		 public:
-			typedef boost::shared_ptr<gate> sptr;
+			typedef std::shared_ptr<gate> sptr;
 
 			/*!
 			 * \brief Return a shared_ptr to a new instance of rfid::gate.

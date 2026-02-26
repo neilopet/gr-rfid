@@ -21,9 +21,9 @@
 #ifndef INCLUDED_RFID_GATE_IMPL_H
 #define INCLUDED_RFID_GATE_IMPL_H
 
-#include <rfid/gate.h>
+#include <gnuradio/rfid/gate.h>
 #include <vector>
-#include "../include/rfid/global_vars.h"
+#include <gnuradio/rfid/global_vars.h>
 
 namespace gr { 
 	namespace rfid {

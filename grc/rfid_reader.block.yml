@@ -3,7 +3,7 @@ label: Reader
 category: '[RFID]'
 
 templates:
-  imports: import rfid
+  imports: from gnuradio import rfid
   make: rfid.reader(${sample_rate}, ${dac_rate})
 
 

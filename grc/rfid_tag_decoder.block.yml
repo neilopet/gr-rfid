@@ -3,7 +3,7 @@ label: Tag Decoder
 category: '[RFID]'
 
 templates:
-  imports: import rfid
+  imports: from gnuradio import rfid
   make: rfid.tag_decoder(${sample_rate})
 
 parameters:

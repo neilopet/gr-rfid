@@ -24,7 +24,7 @@
 
 #include <gnuradio/io_signature.h>
 #include "reader_impl.h"
-#include "../include/rfid/global_vars.h"
+#include <gnuradio/rfid/global_vars.h>
 #include <sys/time.h>
 
 namespace gr {

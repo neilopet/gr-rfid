@@ -21,7 +21,7 @@
 #ifndef INCLUDED_RFID_READER_IMPL_H
 #define INCLUDED_RFID_READER_IMPL_H
 
-#include <rfid/reader.h>
+#include <gnuradio/rfid/reader.h>
 #include <vector>
 #include <queue>
 #include <fstream>

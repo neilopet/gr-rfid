@@ -3,7 +3,7 @@ label: Gate
 category: '[RFID]'
 
 templates:
-  imports: import rfid
+  imports: from gnuradio import rfid
   make: rfid.gate(${sample_rate})
 
 

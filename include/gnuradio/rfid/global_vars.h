@@ -21,7 +21,7 @@
 #ifndef INCLUDED_RFID_GLOBAL_VARS_H
 #define INCLUDED_RFID_GLOBAL_VARS_H
 
-#include <rfid/api.h>
+#include <gnuradio/rfid/api.h>
 #include <map>
 #include <sys/time.h>
 

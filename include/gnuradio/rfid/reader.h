@@ -18,37 +18,41 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef INCLUDED_RFID_TAG_DECODER_H
-#define INCLUDED_RFID_TAG_DECODER_H
+#ifndef INCLUDED_RFID_READER_H
+#define INCLUDED_RFID_READER_H
 
-#include <rfid/api.h>
+#include <gnuradio/rfid/api.h>
 #include <gnuradio/block.h>
 
 namespace gr {
   namespace rfid {
 
     /*!
-     * \brief <+description of block+>
+     * \brief The block is responsible for sending commands for transmission.
+     *
+     * It moves between the following states.
+     *
      * \ingroup rfid
      *
      */
-    class RFID_API tag_decoder : virtual public gr::block
+    class RFID_API reader : virtual public gr::block
     {
      public:
-      typedef boost::shared_ptr<tag_decoder> sptr;
-
+      typedef std::shared_ptr<reader> sptr;
+      virtual void print_results() =0;
       /*!
-       * \brief Return a shared_ptr to a new instance of rfid::tag_decoder.
+       * \brief Return a shared_ptr to a new instance of rfid::reader.
        *
-       * To avoid accidental use of raw pointers, rfid::tag_decoder's
+       * To avoid accidental use of raw pointers, rfid::reader's
        * constructor is in a private implementation
-       * class. rfid::tag_decoder::make is the public interface for
+       * class. rfid::reader::make is the public interface for
        * creating new instances.
        */
-      static sptr make(int sample_rate);
+      static sptr make(int sample_rate, int dac_rate);
+
     };
 
   } // namespace rfid
 } // namespace gr
 
-#endif /* INCLUDED_RFID_TAG_DECODER_H */
+#endif /* INCLUDED_RFID_READER_H */

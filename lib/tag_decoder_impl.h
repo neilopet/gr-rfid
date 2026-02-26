@@ -21,9 +21,9 @@
 #ifndef INCLUDED_RFID_TAG_DECODER_IMPL_H
 #define INCLUDED_RFID_TAG_DECODER_IMPL_H
 
-#include <rfid/tag_decoder.h>
+#include <gnuradio/rfid/tag_decoder.h>
 #include <vector>
-#include "../include/rfid/global_vars.h"
+#include <gnuradio/rfid/global_vars.h>
 #include <time.h>
 #include <numeric>
 #include <fstream>
